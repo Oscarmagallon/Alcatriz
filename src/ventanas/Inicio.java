@@ -135,6 +135,9 @@ public class Inicio extends javax.swing.JFrame {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jRadioButton2MouseClicked(evt);
             }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jRadioButton2MouseExited(evt);
+            }
         });
 
         buttonGroupTipoEquipo.add(jRadioButton3);
@@ -343,9 +346,19 @@ if(jTextFieldPrecio.getText().equals("")){
     private void jTextFieldFraseEquiposActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextFieldFraseEquiposActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextFieldFraseEquiposActionPerformed
+
+    private void jRadioButton2MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jRadioButton2MouseExited
+        // TODO add your handling code here:
+        jTextFieldAño.setVisible(true);
+        jTextFieldPrecio.setVisible(true);
+         jTextFieldTipoImpresora.setVisible(true);
+        jTextFieldTipo.setVisible(true);
+        jTextFieldSSOO.setVisible(true);
+        
+    }//GEN-LAST:event_jRadioButton2MouseExited
    
     
-    
+   
     /**
      * @param args the command line arguments
      */
